@@ -4,7 +4,7 @@ const BASE_URL = 'https://graph-stray-couch.ngrok-free.dev/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
-  headers: { 'Content-Type': 'application/json' }
+  headers: { 'Content-Type': 'application/json', 'ngrok-skip-browser-warning': 'true' }
 });
 
 // Auth
@@ -30,4 +30,5 @@ export const allocateEmployee = (data) => api.post('/allocations', data);
 export const removeAllocation = (id) => api.delete(`/allocations/${id}`);
 
 export default api;
+
 
