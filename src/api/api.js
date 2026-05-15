@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://empallocationapi-production.up.railway.app/api';
+const BASE_URL = 'https://graph-stray-couch.ngrok-free.dev/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
@@ -30,3 +30,4 @@ export const allocateEmployee = (data) => api.post('/allocations', data);
 export const removeAllocation = (id) => api.delete(`/allocations/${id}`);
 
 export default api;
+
