@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://localhost:7189/api';
+const BASE_URL = 'https://empallocationapi-production.up.railway.app/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
